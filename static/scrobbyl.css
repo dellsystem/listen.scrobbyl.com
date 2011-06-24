@@ -119,17 +119,18 @@ h3 {
 	margin-top: -65px;
 	height: 65px;
 	clear: both;
-	padding-top: 20px;
+	padding-top: 12px;
 } 
 
 #footer .left {
-	position: relative;
-	clear: right;
+	float: left;
+	width: 500px;
+	padding-top: 8px;
 }
 
 #footer .right {
-	position: relative;
-	clear: left;
+	float: right;
+	width: 360px;
 }
 
 /*Opera Fix*/
