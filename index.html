@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Scrobbyl</title> 
+	<script type="text/javascript" src="http://listen.scrobbyl.com/static/jquery-1.5.min.js?v=63c1b"></script> 
+	<script type="text/javascript" src="http://listen.scrobbyl.com/static/swfobject.js"></script> 
+	<script type="text/javascript"> 
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-21382543-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script> 
+	<script type="text/javascript" src="http://listen.scrobbyl.com/static/scrobbyl.js"></script> 
+	<link href="static/scrobbyl.css" rel="stylesheet" />
+	<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+	<![endif]-->
+
+</head>
+<body> 
+	<div id="wrap">
+		<div id="main">
+			<h2>What song am I listening to?</h2> 
+			<p class="explain">Scrobbyl uses your microphone to identify and scrobble music.</p>
+			<p class="explain">Click the headphones to listen.</p>
+			<br />
+			<br />
+			<div id="click"><img src="static/headphones.png" alt="headphones" /></div> 
+			<div id="flashContent"></div> 
+			<p id="details"></p> 
+			<button disabled="disabled" id="scbutton">Scrobble it</button>
+			<p><input type="checkbox" id="autoscrobble"><label for="autoscrobble">Automatically scrobble when a song is identified</label></p> 
+			<p id="amazonlink"></p> 
+			<p id="errors"></p>
+			<p><a href="" id="tellmemore">Tell me more &raquo;</a><p>
+			<div id="help"> 
+				<h3>How does this work?</h3>
+				Scrobbyl uses the <a href="http://echoprint.me">Echoprint</a> open source fingerprinter to identify what songs are playing around you. It uses a small flash applet to record, using your computer's microphone. Lookups are performed using the Echo Nest.
+				<h3>It says it doesn't know what's playing</h3>
+				The Echoprint service currently has a small database for testing. Try limiting searches to popular music released before 2003.
+				<h3>Credits</h3>
+				Headphones by <a href="http://svengraph.deviantart.com/">Svengraph</a> 
+			</div> 
+		</div> 
+	</div>
+	<div id="footer"> 
+	<div class="left"><span style="postion:absolute; left:0; bottom:0; padding-left:5px;"> 
+		Developed by <a href="http://twitter.com/alastairporter">Alastair Porter</a>. Theme by xxx. Feedback? <a href="http://twitter.com/scrobbyl">@scrobbyl</a> 
+	</span></div> 
+	<div class="right"><span style="position:absolute; right:0; bottom:0;">Powered by <a href="http://echoprint.me">Echoprint</a> and <a href="http://the.echonest.com"><img src="static/echonest.png" style="display:inline-block; vertical-align:text-bottom;"></a></span>
+	</div>
+</div>
+</body> 
+</html> 
