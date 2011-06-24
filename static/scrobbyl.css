@@ -18,6 +18,11 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 html, body {
@@ -89,6 +94,7 @@ p {
 #tellmemore {
 	font-size: 1.5em;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 #help {
