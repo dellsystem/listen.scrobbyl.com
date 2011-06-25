@@ -125,12 +125,13 @@ h3 {
 	float: left;
 	width: 500px;
 	padding-top: 20px;
+	padding-left: 10px;
 }
 
 #footer .right {
 	float: right;
-	width: 360px;
 	padding-top: 12px;
+	padding-right: 10px;
 }
 
 /*Opera Fix*/
